@@ -1,0 +1,63 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{height:100%;overflow:hidden;}
+
+body{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(#ffefba,#ff7e5f);
+  font-family:"Segoe UI",Arial;
+}
+
+/* Canvas */
+#gameCanvas{
+  display:none;
+  border-radius:14px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.3);
+  touch-action:manipulation;
+}
+
+/* Start Screen */
+#startScreen{
+  position:absolute;
+  text-align:center;
+  color:#fff;
+  text-shadow:0 2px 5px rgba(0,0,0,0.6);
+}
+#startScreen h1{font-size:40px;margin-bottom:12px;}
+#startBtn{
+  font-size:22px;
+  padding:12px 28px;
+  background:#ffd54a;
+  border:none;
+  border-radius:10px;
+}
+
+/* Score */
+#scoreBox{
+  position:absolute;
+  top:14px;
+  left:14px;
+  font-size:22px;
+  color:white;
+  text-shadow:0 2px 4px rgba(0,0,0,0.6);
+  z-index:20;
+}
+
+/* Game over screen */
+#gameOverScreen{
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  background:rgba(0,0,0,0.55);
+  text-align:center;
+  color:white;
+  display:none;
+  z-index:20;
+}
+#gameOverScreen img{
+  width:240px;
+  margin-top:100px;
+  filter:drop-shadow(0 4px 15px rgba(0,0,0,0.6));
+}
+#gameOverText{margin-top:15px;font-size:28px;}
+#restartText{margin-top:20px;font-size:20px;display:none;}
